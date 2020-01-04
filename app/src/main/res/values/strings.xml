@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Homework07</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="notMem">Not a member,</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="fmale">Female</string>
+    <string name="alreadyMem">Already a member,</string>
+    <string name="or">OR</string>
+    <string name="other">Other</string>
+    <string name="conPass">Confirm Password</string>
+    <string name="edit">Edit</string>
+    <string name="users">Users</string>
+    <string name="search">Search</string>
+    <string name="tripName">Name of the Trip</string>
+    <string name="save">Save</string>
+    <string name="yourTrips">Your Trips</string>
+    <string name="otherTrips">Trips By Others</string>
+
+</resources>

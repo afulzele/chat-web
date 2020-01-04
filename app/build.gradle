@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.homework07"
+        minSdkVersion 25
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+apply plugin: 'com.android.application'
+
+dependencies {
+    //    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.firebase:firebase-firestore:21.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation files('libs/google-oauth-client-1.25.0.jar')
+    implementation files('libs/google-http-client-1.25.0.jar')
+    implementation files('libs/google-http-client-jackson2-1.25.0.jar')
+    implementation files('libs/google-api-client-1.25.0.jar')
+    implementation files('libs/google-api-services-people-v1-rev506-1.25.0.jar')
+    implementation files('libs/google-api-services-people-v1-rev506-1.25.0-javadoc.jar')
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation files('libs/jackson-core-2.9.6.jar')
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.libraries.places:places:1.0.0'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+}
+
+apply plugin: 'com.google.gms.google-services'
